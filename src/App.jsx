@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import pokeFns from './pokeFns.js'
+import * as pokeFns from './pokeFns.js'
 import Pokemon from './Pokemon.jsx'
-import data from './assets/data.js'
 import './App.css'
 
 export default function App() {
@@ -11,7 +10,11 @@ export default function App() {
   return (
     <>
       <h1>pokimane memory game !!!!!</h1>
-      <button onClick={async () => await pokeFns(setPokemons)} >start</button>
+      <div className="startButtons">
+        <button value={12} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Normal</button>
+        <button value={24} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Hard</button>
+        <button value={32} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Maddening</button>
+      </div>
       <Pokemon pokemons={pokemons} />
     </>
   )

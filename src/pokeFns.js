@@ -1,11 +1,11 @@
 import data from './assets/data.js'
 import { v4 as uuid } from 'uuid'
 
-function pokeFns(setPokemons) {
+function populatePokedex(setPokemons, btnValue) {
   const pokedex = [];
   const pokedexSet = new Set();
 
-  while (pokedex.length < 16) {
+  while (pokedex.length < btnValue) {
     const random = Math.floor(Math.random() * data.length);
     const randomPokemon = data[random];
     if (!pokedexSet.has(randomPokemon.name)) {
@@ -21,4 +21,6 @@ function pokeFns(setPokemons) {
   setPokemons(pokedex);
 }
 
-export default pokeFns;
+export {
+  populatePokedex
+};
