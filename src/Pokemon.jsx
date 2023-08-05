@@ -3,7 +3,12 @@
 export default function Pokemon({pokemons}) {
   return (
     <>
-      {pokemons.map(poke => <p key={poke} >{poke} </p>)}
+      {pokemons.map(pokemon =>
+        <div className="card" key={pokemon.id} >
+          <img src={pokemon.img} alt={pokemon.name}></img>
+          <p>{pokemon.name}</p>
+        </div>
+      )}
     </>
   );
 }
