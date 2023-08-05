@@ -5,6 +5,28 @@
   text-align: center;
 }
 
+.gameBoard {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 16px;
+}
+
+.pokeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 120px;
+  outline: solid 2px black;
+  border-radius: 10px;
+}
+
+.pokeCard > p {
+  margin: 4px 0;
+  line-height: 0;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

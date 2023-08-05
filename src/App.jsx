@@ -13,9 +13,14 @@ export default function App() {
       <div className="startButtons">
         <button value={12} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Normal</button>
         <button value={24} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Hard</button>
-        <button value={32} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Maddening</button>
+        <button value={36} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Maddening</button>
       </div>
-      <Pokemon pokemons={pokemons} />
+      <div className="gameBoard" >
+        {pokemons.map(pokemon => 
+        <div className="pokeCard" key={pokemon.id} >
+          <Pokemon pokemon={pokemon} />
+        </div>)}
+      </div>
     </>
   )
 }
