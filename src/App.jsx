@@ -5,6 +5,19 @@ import './App.css'
 
 export default function App() {
 
+  function shufflePokedex() {
+    const oldPokedex = structuredClone(pokemons);
+    const newPokedex = [];
+    
+    while(newPokedex.length < pokemons.length) {
+      const random = Math.floor(Math.random() * oldPokedex.length);
+      newPokedex.push(oldPokedex[random]);
+      oldPokedex.splice(random, 1);
+    }
+  
+    setPokemons(newPokedex);
+  }
+
   const [pokemons, setPokemons] = useState([]);
 
   return (
@@ -17,7 +30,7 @@ export default function App() {
       </div>
       <div className="gameBoard" >
         {pokemons.map(pokemon => 
-        <div className="pokeCard" key={pokemon.id} >
+        <div className="pokeCard" key={pokemon.id} onClick={shufflePokedex} >
           <Pokemon pokemon={pokemon} />
         </div>)}
       </div>

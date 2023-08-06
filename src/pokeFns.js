@@ -21,10 +21,6 @@ function populatePokedex(setPokemons, btnValue) {
   setPokemons(pokedex);
 }
 
-// function shufflePokedex(pokemons, setPokemons) {
-
-// }
-
 export {
   populatePokedex
 };
