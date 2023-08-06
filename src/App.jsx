@@ -38,7 +38,7 @@ export default function App() {
     }
   }
 
-  function newGame(setPokemons, value) {
+  function newGame(value) {
     const gameBoardStatus = document.querySelector(".gameBoardStatus");
     gameBoardStatus.style.display = "block";
     const resultScreen = document.querySelector(".resultScreen");
@@ -50,8 +50,6 @@ export default function App() {
   }
 
   function gameOver() {
-    const gameBoardStatus = document.querySelector(".gameBoardStatus");
-    gameBoardStatus.style.display = "none";
     const resultScreen = document.querySelector(".resultScreen");
     resultScreen.style.display = "flex";
   }
@@ -62,15 +60,12 @@ export default function App() {
 
   return (
     <>
-      <h1>pokimane memory game !!!!!</h1>
       <div className="startButtons">
-        <button value={12} onClick={(e) => newGame(setPokemons, e.target.value)} >Normal</button>
-        <button value={24} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Hard</button>
-        <button value={36} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Maddening</button>
+        <button value={12} onClick={(e) => newGame(e.target.value)} >Normal</button>
+        <button value={24} onClick={(e) => newGame(e.target.value)} >Hard</button>
+        <button value={36} onClick={(e) => newGame(e.target.value)} >Maddening</button>
       </div>
-      <div className="resultScreen" >
-        <ResultScreen correct={correct} newGame={newGame(setPokemons, pokemons.length)} />
-      </div>
+      <ResultScreen correct={correct} newGame={newGame} pokemonsLength={pokemons.length} />
       <p className="gameBoardStatus" >correct: {correct}/{pokemons.length}</p>
       <div className="gameBoard" >
         {pokemons.map(pokemon => 
