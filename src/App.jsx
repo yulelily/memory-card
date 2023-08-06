@@ -26,6 +26,11 @@ export default function App() {
       setMemory(memory);
       setCorrect(correct + 1);
 
+      if (correct + 1 > localStorage.getItem("highscore")) {
+        localStorage.setItem("highscore", correct + 1);
+        setHighscore(correct + 1);
+      }
+
       if (correct + 1 >= pokemons.length) {
         console.log("win !");
         gameOver();
@@ -57,6 +62,7 @@ export default function App() {
   const [pokemons, setPokemons] = useState([]);
   const [memory, setMemory] = useState(new Set());
   const [correct, setCorrect] = useState(0);
+  const [highscore, setHighscore] = useState(localStorage.getItem("highscore") === null ? 0 : localStorage.getItem("highscore"));
 
   return (
     <>
@@ -66,7 +72,7 @@ export default function App() {
         <button value={36} onClick={(e) => newGame(e.target.value)} >Maddening</button>
       </div>
       <ResultScreen correct={correct} newGame={newGame} pokemonsLength={pokemons.length} />
-      <p className="gameBoardStatus" >correct: {correct}/{pokemons.length}</p>
+      <p className="gameBoardStatus" >score: {correct}/{pokemons.length} highscore: {highscore}</p>
       <div className="gameBoard" >
         {pokemons.map(pokemon => 
         <div className="pokeCard" key={pokemon.id} value={pokemon.name} onClick={(e) => handleClick(e.currentTarget.getAttribute("value"))} >
