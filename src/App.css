@@ -27,6 +27,24 @@
   line-height: 0;
 }
 
+.resultScreen {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(192, 137, 140, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gameBoardStatus,
+.resultScreen {
+  display: none;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

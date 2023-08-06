@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import * as pokeFns from './pokeFns.js'
 import Pokemon from './Pokemon.jsx'
+import ResultScreen from './ResultScreen.jsx'
 import './App.css'
 
 export default function App() {
@@ -27,16 +28,32 @@ export default function App() {
 
       if (correct + 1 >= pokemons.length) {
         console.log("win !");
-        // win !
+        gameOver();
       } else {
         shufflePokedex();
       }
 
     } else {
-      setMemory(new Set());
-      setCorrect(0);
-      // game over
+      gameOver();
     }
+  }
+
+  function newGame(setPokemons, value) {
+    const gameBoardStatus = document.querySelector(".gameBoardStatus");
+    gameBoardStatus.style.display = "block";
+    const resultScreen = document.querySelector(".resultScreen");
+    resultScreen.style.display = "none";
+    
+    setMemory(new Set());
+    setCorrect(0);
+    pokeFns.populatePokedex(setPokemons, value)
+  }
+
+  function gameOver() {
+    const gameBoardStatus = document.querySelector(".gameBoardStatus");
+    gameBoardStatus.style.display = "none";
+    const resultScreen = document.querySelector(".resultScreen");
+    resultScreen.style.display = "flex";
   }
 
   const [pokemons, setPokemons] = useState([]);
@@ -47,13 +64,14 @@ export default function App() {
     <>
       <h1>pokimane memory game !!!!!</h1>
       <div className="startButtons">
-        <button value={12} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Normal</button>
+        <button value={12} onClick={(e) => newGame(setPokemons, e.target.value)} >Normal</button>
         <button value={24} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Hard</button>
         <button value={36} onClick={(e) => pokeFns.populatePokedex(setPokemons, e.target.value)} >Maddening</button>
       </div>
-      <div>
-        <p>correct: {correct}</p>
+      <div className="resultScreen" >
+        <ResultScreen correct={correct} newGame={newGame(setPokemons, pokemons.length)} />
       </div>
+      <p className="gameBoardStatus" >correct: {correct}/{pokemons.length}</p>
       <div className="gameBoard" >
         {pokemons.map(pokemon => 
         <div className="pokeCard" key={pokemon.id} value={pokemon.name} onClick={(e) => handleClick(e.currentTarget.getAttribute("value"))} >
