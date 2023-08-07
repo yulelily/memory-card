@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import * as pokeFns from './pokeFns.js'
 import Pokemon from './Pokemon.jsx'
+import HelpScreen from './HelpScreen.jsx'
 import ResultScreen from './ResultScreen.jsx'
 import './App.css'
 
@@ -43,6 +44,11 @@ export default function App() {
     }
   }
 
+  function displayHelp() {
+    const helpScreen = document.querySelector(".helpScreen");
+    helpScreen.style.display = "flex";
+  }
+
   function newGame(value) {
     const gameBoardStatus = document.querySelector(".gameBoardStatus");
     gameBoardStatus.style.display = "block";
@@ -70,7 +76,9 @@ export default function App() {
         <button value={12} onClick={(e) => newGame(e.target.value)} >Normal</button>
         <button value={24} onClick={(e) => newGame(e.target.value)} >Hard</button>
         <button value={36} onClick={(e) => newGame(e.target.value)} >Maddening</button>
+        <button onClick={() => displayHelp()} >?</button>
       </div>
+      <HelpScreen />
       <ResultScreen correct={correct} newGame={newGame} pokemonsLength={pokemons.length} />
       <p className="gameBoardStatus" >score: {correct}/{pokemons.length} highscore: {highscore}</p>
       <div className="gameBoard" >
