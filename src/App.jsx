@@ -7,6 +7,20 @@ import './styles/App.css'
 
 export default function App() {
 
+  function toggleTheme() {
+    const newTheme = theme === "light" ? "dark" : "light"
+    setTheme(newTheme);
+    document.querySelector("html").setAttribute("data-theme", newTheme);
+  }
+
+  const [theme, setTheme] = useState(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    }
+    document.querySelector("html").setAttribute("data-theme", "light");
+    return "light";
+  });
+
   function shufflePokedex() {
     const oldPokedex = structuredClone(pokemons);
     const newPokedex = [];
@@ -77,6 +91,7 @@ export default function App() {
         <button value={24} onClick={(e) => newGame(e.target.value)} >Hard</button>
         <button value={36} onClick={(e) => newGame(e.target.value)} >Maddening</button>
         <button onClick={() => displayHelp()} >?</button>
+        <button onClick={() => toggleTheme()} >&#128420;</button>
       </div>
       <HelpScreen />
       <ResultScreen correct={correct} newGame={newGame} pokemonsLength={pokemons.length} />

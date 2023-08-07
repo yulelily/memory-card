@@ -3,54 +3,38 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+}
 
-  color-scheme: light dark;
+/* light theme */
+html[data-theme="light"] {
   --main-pink-color: rgb(129, 72, 82);
   --main-popup-color: #fce2e2;
   --main-overlay-color: rgba(148, 107, 109, 0.4);
   --main-outline-color: black;
-
-  --dark-pink-color: rgb(255, 185, 185);
-  --dark-popup-color: rgb(185, 140, 140);
-  --dark-overlay-color: rgba(121, 90, 91, 0.4);
-  --dark-outline-color: white;
 }
-
-@media (prefers-color-scheme: light) {
-  .pokeCard {
-    outline: solid 2px var(--main-outline-color);
-  }
-  .pokeCard:hover {
-    background-color: var(--main-popup-color);
-    outline: 2px solid var(--main-pink-color);
-  }
-  .helpScreen,
-  .resultScreen {
-    background-color: var(--main-overlay-color);
-  }
-  .helpCard,
-  .resultCard {
-    background-color: var(--main-popup-color);
-    border: solid 2px var(--main-outline-color);
-  }
+/* dark theme */
+html[data-theme="dark"] {
+  --main-pink-color: rgb(255, 185, 185);
+  --main-popup-color: rgb(185, 140, 140);
+  --main-overlay-color: rgba(121, 90, 91, 0.4);
+  --main-outline-color: white;
 }
-@media (prefers-color-scheme: dark) {
-  .pokeCard {
-    outline: solid 2px var(--dark-outline-color);
-  }
-  .pokeCard:hover {
-    background-color: var(--dark-popup-color);
-    outline: 2px solid var(--dark-pink-color);
-  }
-  .helpScreen,
-  .resultScreen {
-    background-color: var(--dark-overlay-color);
-  }
-  .helpCard,
-  .resultCard {
-    background-color: var(--dark-popup-color);
-    border: solid 2px var(--dark-outline-color);
-  }
+/* color scheme */
+.pokeCard {
+  outline: solid 2px var(--main-outline-color);
+}
+.pokeCard:hover {
+  background-color: var(--main-popup-color);
+  outline: 2px solid var(--main-pink-color);
+}
+.helpScreen,
+.resultScreen {
+  background-color: var(--main-overlay-color);
+}
+.helpCard,
+.resultCard {
+  background-color: var(--main-popup-color);
+  border: solid 2px var(--main-outline-color);
 }
 
 .startButtons > button {
