@@ -23,6 +23,11 @@
   border-radius: 10px;
 }
 
+.pokeCard:hover {
+  background-color: #fce2e2;
+  outline: 2px solid rgb(129, 72, 82);
+}
+
 .pokeCard > p {
   margin: 4px 0;
   line-height: 0;
