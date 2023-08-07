@@ -3,15 +3,65 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+
+  color-scheme: light dark;
+  --main-pink-color: rgb(129, 72, 82);
+  --main-popup-color: #fce2e2;
+  --main-overlay-color: rgba(148, 107, 109, 0.4);
+  --main-outline-color: black;
+
+  --dark-pink-color: rgb(255, 185, 185);
+  --dark-popup-color: rgb(185, 140, 140);
+  --dark-overlay-color: rgba(121, 90, 91, 0.4);
+  --dark-outline-color: white;
 }
 
+@media (prefers-color-scheme: light) {
+  .pokeCard {
+    outline: solid 2px var(--main-outline-color);
+  }
+  .pokeCard:hover {
+    background-color: var(--main-popup-color);
+    outline: 2px solid var(--main-pink-color);
+  }
+  .helpScreen,
+  .resultScreen {
+    background-color: var(--main-overlay-color);
+  }
+  .helpCard,
+  .resultCard {
+    background-color: var(--main-popup-color);
+    border: solid 2px var(--main-outline-color);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .pokeCard {
+    outline: solid 2px var(--dark-outline-color);
+  }
+  .pokeCard:hover {
+    background-color: var(--dark-popup-color);
+    outline: 2px solid var(--dark-pink-color);
+  }
+  .helpScreen,
+  .resultScreen {
+    background-color: var(--dark-overlay-color);
+  }
+  .helpCard,
+  .resultCard {
+    background-color: var(--dark-popup-color);
+    border: solid 2px var(--dark-outline-color);
+  }
+}
+
+.startButtons > button {
+  margin: 0px 6px;
+}
 .gameBoard {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   gap: 16px;
 }
-
 .pokeCard {
   display: flex;
   flex-direction: column;
@@ -19,20 +69,13 @@
   align-items: center;
   width: 140px;
   height: 120px;
-  outline: solid 2px black;
   border-radius: 10px;
+  cursor: pointer;
 }
-
-.pokeCard:hover {
-  background-color: #fce2e2;
-  outline: 2px solid rgb(129, 72, 82);
-}
-
 .pokeCard > p {
   margin: 4px 0;
   line-height: 0;
 }
-
 .helpScreen,
 .resultScreen {
   width: 100vw;
@@ -40,13 +83,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(148, 107, 109, 0.4);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .helpCard,
 .resultCard {
   display: flex;
@@ -54,54 +95,15 @@
   justify-content: center;
   align-items: center;
 
+  padding: 0px 6px;
   width: 45vw;
   height: 30vh;
-  background-color: #fce2e2;
-  border: solid 2px black;
   border-radius: 24px;
 }
-
 .helpCard > h3 {
   margin: 0;
 }
-
 .gameBoardStatus,
 .resultScreen {
   display: none;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
