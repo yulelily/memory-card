@@ -1,607 +1,607 @@
 const pokeArray = [
   {
     "name": "Turtwig",
-    "img": "../images/turtwig.png"
+    "img": "turtwig.png"
   },
   {
     "name": "Grotle",
-    "img": "../images/grotle.png"
+    "img": "grotle.png"
   },
   {
     "name": "Torterra",
-    "img": "../images/torterra.png"
+    "img": "torterra.png"
   },
   {
     "name": "Chimchar",
-    "img": "../images/chimchar.png"
+    "img": "chimchar.png"
   },
   {
     "name": "Monferno",
-    "img": "../images/monferno.png"
+    "img": "monferno.png"
   },
   {
     "name": "Infernape",
-    "img": "../images/infernape.png"
+    "img": "infernape.png"
   },
   {
     "name": "Piplup",
-    "img": "../images/piplup.png"
+    "img": "piplup.png"
   },
   {
     "name": "Prinplup",
-    "img": "../images/prinplup.png"
+    "img": "prinplup.png"
   },
   {
     "name": "Empoleon",
-    "img": "../images/empoleon.png"
+    "img": "empoleon.png"
   },
   {
     "name": "Starly",
-    "img": "../images/starly.png"
+    "img": "starly.png"
   },
   {
     "name": "Staravia",
-    "img": "../images/staravia.png"
+    "img": "staravia.png"
   },
   {
     "name": "Staraptor",
-    "img": "../images/staraptor.png"
+    "img": "staraptor.png"
   },
   {
     "name": "Bidoof",
-    "img": "../images/bidoof.png"
+    "img": "bidoof.png"
   },
   {
     "name": "Bibarel",
-    "img": "../images/bibarel.png"
+    "img": "bibarel.png"
   },
   {
     "name": "Kricketot",
-    "img": "../images/kricketot.png"
+    "img": "kricketot.png"
   },
   {
     "name": "Kricketune",
-    "img": "../images/kricketune.png"
+    "img": "kricketune.png"
   },
   {
     "name": "Shinx",
-    "img": "../images/shinx.png"
+    "img": "shinx.png"
   },
   {
     "name": "Luxio",
-    "img": "../images/luxio.png"
+    "img": "luxio.png"
   },
   {
     "name": "Luxray",
-    "img": "../images/luxray.png"
+    "img": "luxray.png"
   },
   {
     "name": "Abra",
-    "img": "../images/abra.png"
+    "img": "abra.png"
   },
   {
     "name": "Kadabra",
-    "img": "../images/kadabra.png"
+    "img": "kadabra.png"
   },
   {
     "name": "Alakazam",
-    "img": "../images/alakazam.png"
+    "img": "alakazam.png"
   },
   {
     "name": "Magikarp",
-    "img": "../images/magikarp.png"
+    "img": "magikarp.png"
   },
   {
     "name": "Gyarados",
-    "img": "../images/gyarados.png"
+    "img": "gyarados.png"
   },
   {
     "name": "Budew",
-    "img": "../images/budew.png"
+    "img": "budew.png"
   },
   {
     "name": "Roselia",
-    "img": "../images/roselia.png"
+    "img": "roselia.png"
   },
   {
     "name": "Roserade",
-    "img": "../images/roserade.png"
+    "img": "roserade.png"
   },
   {
     "name": "Zubat",
-    "img": "../images/zubat.png"
+    "img": "zubat.png"
   },
   {
     "name": "Golbat",
-    "img": "../images/golbat.png"
+    "img": "golbat.png"
   },
   {
     "name": "Crobat",
-    "img": "../images/crobat.png"
+    "img": "crobat.png"
   },
   {
     "name": "Geodude",
-    "img": "../images/geodude.png"
+    "img": "geodude.png"
   },
   {
     "name": "Graveler",
-    "img": "../images/graveler.png"
+    "img": "graveler.png"
   },
   {
     "name": "Golem",
-    "img": "../images/golem.png"
+    "img": "golem.png"
   },
   {
     "name": "Onix",
-    "img": "../images/onix.png"
+    "img": "onix.png"
   },
   {
     "name": "Steelix",
-    "img": "../images/steelix.png"
+    "img": "steelix.png"
   },
   {
     "name": "Cranidos",
-    "img": "../images/cranidos.png"
+    "img": "cranidos.png"
   },
   {
     "name": "Rampardos",
-    "img": "../images/rampardos.png"
+    "img": "rampardos.png"
   },
   {
     "name": "Shieldon",
-    "img": "../images/shieldon.png"
+    "img": "shieldon.png"
   },
   {
     "name": "Bastiodon",
-    "img": "../images/bastiodon.png"
+    "img": "bastiodon.png"
   },
   {
     "name": "Machop",
-    "img": "../images/machop.png"
+    "img": "machop.png"
   },
   {
     "name": "Machoke",
-    "img": "../images/machoke.png"
+    "img": "machoke.png"
   },
   {
     "name": "Machamp",
-    "img": "../images/machamp.png"
+    "img": "machamp.png"
   },
   {
     "name": "Psyduck",
-    "img": "../images/psyduck.png"
+    "img": "psyduck.png"
   },
   {
     "name": "Golduck",
-    "img": "../images/golduck.png"
+    "img": "golduck.png"
   },
   {
     "name": "Burmy",
-    "img": "../images/burmy.png"
+    "img": "burmy.png"
   },
   {
     "name": "Wormadam",
-    "img": "../images/wormadam.png"
+    "img": "wormadam.png"
   },
   {
     "name": "Mothim",
-    "img": "../images/mothim.png"
+    "img": "mothim.png"
   },
   {
     "name": "Wurmple",
-    "img": "../images/wurmple.png"
+    "img": "wurmple.png"
   },
   {
     "name": "Silcoon",
-    "img": "../images/silcoon.png"
+    "img": "silcoon.png"
   },
   {
     "name": "Beautifly",
-    "img": "../images/beautifly.png"
+    "img": "beautifly.png"
   },
   {
     "name": "Cascoon",
-    "img": "../images/cascoon.png"
+    "img": "cascoon.png"
   },
   {
     "name": "Dustox",
-    "img": "../images/dustox.png"
+    "img": "dustox.png"
   },
   {
     "name": "Combee",
-    "img": "../images/combee.png"
+    "img": "combee.png"
   },
   {
     "name": "Vespiquen",
-    "img": "../images/vespiquen.png"
+    "img": "vespiquen.png"
   },
   {
     "name": "Pachirisu",
-    "img": "../images/pachirisu.png"
+    "img": "pachirisu.png"
   },
   {
     "name": "Buizel",
-    "img": "../images/buizel.png"
+    "img": "buizel.png"
   },
   {
     "name": "Floatzel",
-    "img": "../images/floatzel.png"
+    "img": "floatzel.png"
   },
   {
     "name": "Cherubi",
-    "img": "../images/cherubi.png"
+    "img": "cherubi.png"
   },
   {
     "name": "Cherrim",
-    "img": "../images/cherrim.png"
+    "img": "cherrim.png"
   },
   {
     "name": "Shellos",
-    "img": "../images/shellos.png"
+    "img": "shellos.png"
   },
   {
     "name": "Gastrodon",
-    "img": "../images/gastrodon.png"
+    "img": "gastrodon.png"
   },
   {
     "name": "Heracross",
-    "img": "../images/heracross.png"
+    "img": "heracross.png"
   },
   {
     "name": "Aipom",
-    "img": "../images/aipom.png"
+    "img": "aipom.png"
   },
   {
     "name": "Ambipom",
-    "img": "../images/ambipom.png"
+    "img": "ambipom.png"
   },
   {
     "name": "Drifloon",
-    "img": "../images/drifloon.png"
+    "img": "drifloon.png"
   },
   {
     "name": "Drifblim",
-    "img": "../images/drifblim.png"
+    "img": "drifblim.png"
   },
   {
     "name": "Buneary",
-    "img": "../images/buneary.png"
+    "img": "buneary.png"
   },
   {
     "name": "Lopunny",
-    "img": "../images/lopunny.png"
+    "img": "lopunny.png"
   },
   {
     "name": "Gastly",
-    "img": "../images/gastly.png"
+    "img": "gastly.png"
   },
   {
     "name": "Haunter",
-    "img": "../images/haunter.png"
+    "img": "haunter.png"
   },
   {
     "name": "Gengar",
-    "img": "../images/gengar.png"
+    "img": "gengar.png"
   },
   {
     "name": "Misdreavus",
-    "img": "../images/misdreavus.png"
+    "img": "misdreavus.png"
   },
   {
     "name": "Mismagius",
-    "img": "../images/mismagius.png"
+    "img": "mismagius.png"
   },
   {
     "name": "Murkrow",
-    "img": "../images/murkrow.png"
+    "img": "murkrow.png"
   },
   {
     "name": "Honchkrow",
-    "img": "../images/honchkrow.png"
+    "img": "honchkrow.png"
   },
   {
     "name": "Glameow",
-    "img": "../images/glameow.png"
+    "img": "glameow.png"
   },
   {
     "name": "Purugly",
-    "img": "../images/purugly.png"
+    "img": "purugly.png"
   },
   {
     "name": "Goldeen",
-    "img": "../images/goldeen.png"
+    "img": "goldeen.png"
   },
   {
     "name": "Seaking",
-    "img": "../images/seaking.png"
+    "img": "seaking.png"
   },
   {
     "name": "Barboach",
-    "img": "../images/barboach.png"
+    "img": "barboach.png"
   },
   {
     "name": "Whiscash",
-    "img": "../images/whiscash.png"
+    "img": "whiscash.png"
   },
   {
     "name": "Chingling",
-    "img": "../images/chingling.png"
+    "img": "chingling.png"
   },
   {
     "name": "Chimecho",
-    "img": "../images/chimecho.png"
+    "img": "chimecho.png"
   },
   {
     "name": "Stunky",
-    "img": "../images/stunky.png"
+    "img": "stunky.png"
   },
   {
     "name": "Skuntank",
-    "img": "../images/skuntank.png"
+    "img": "skuntank.png"
   },
   {
     "name": "Meditite",
-    "img": "../images/meditite.png"
+    "img": "meditite.png"
   },
   {
     "name": "Medicham",
-    "img": "../images/medicham.png"
+    "img": "medicham.png"
   },
   {
     "name": "Bronzor",
-    "img": "../images/bronzor.png"
+    "img": "bronzor.png"
   },
   {
     "name": "Bronzong",
-    "img": "../images/bronzong.png"
+    "img": "bronzong.png"
   },
   {
     "name": "Ponyta",
-    "img": "../images/ponyta.png"
+    "img": "ponyta.png"
   },
   {
     "name": "Rapidash",
-    "img": "../images/rapidash.png"
+    "img": "rapidash.png"
   },
   {
     "name": "Bonsly",
-    "img": "../images/bonsly.png"
+    "img": "bonsly.png"
   },
   {
     "name": "Sudowoodo",
-    "img": "../images/sudowoodo.png"
+    "img": "sudowoodo.png"
   },
   {
     "name": "Mine jr.",
-    "img": "../images/mime-jr.png"
+    "img": "mime-jr.png"
   },
   {
     "name": "Mr. Mime",
-    "img": "../images/mr-mime.png"
+    "img": "mr-mime.png"
   },
   {
     "name": "Happiny",
-    "img": "../images/happiny.png"
+    "img": "happiny.png"
   },
   {
     "name": "Chansey",
-    "img": "../images/chansey.png"
+    "img": "chansey.png"
   },
   {
     "name": "Blissey",
-    "img": "../images/blissey.png"
+    "img": "blissey.png"
   },
   {
     "name": "Cleffa",
-    "img": "../images/cleffa.png"
+    "img": "cleffa.png"
   },
   {
     "name": "Clefairy",
-    "img": "../images/clefairy.png"
+    "img": "clefairy.png"
   },
   {
     "name": "Clefable",
-    "img": "../images/clefable.png"
+    "img": "clefable.png"
   },
   {
     "name": "Chatot",
-    "img": "../images/chatot.png"
+    "img": "chatot.png"
   },
   {
     "name": "Pichu",
-    "img": "../images/pichu.png"
+    "img": "pichu.png"
   },
   {
     "name": "Pikachu",
-    "img": "../images/pikachu.png"
+    "img": "pikachu.png"
   },
   {
     "name": "Raichu",
-    "img": "../images/raichu.png"
+    "img": "raichu.png"
   },
   {
     "name": "Hoothoot",
-    "img": "../images/hoothoot.png"
+    "img": "hoothoot.png"
   },
   {
     "name": "Noctowl",
-    "img": "../images/noctowl.png"
+    "img": "noctowl.png"
   },
   {
     "name": "Spiritomb",
-    "img": "../images/spiritomb.png"
+    "img": "spiritomb.png"
   },
   {
     "name": "Gible",
-    "img": "../images/gible.png"
+    "img": "gible.png"
   },
   {
     "name": "Gabite",
-    "img": "../images/gabite.png"
+    "img": "gabite.png"
   },
   {
     "name": "Garchomp",
-    "img": "../images/garchomp.png"
+    "img": "garchomp.png"
   },
   {
     "name": "Munchlax",
-    "img": "../images/munchlax.png"
+    "img": "munchlax.png"
   },
   {
     "name": "Snorlax",
-    "img": "../images/snorlax.png"
+    "img": "snorlax.png"
   },
   {
     "name": "Unown",
-    "img": "../images/unown.png"
+    "img": "unown.png"
   },
   {
     "name": "Riolu",
-    "img": "../images/riolu.png"
+    "img": "riolu.png"
   },
   {
     "name": "Lucario",
-    "img": "../images/lucario.png"
+    "img": "lucario.png"
   },
   {
     "name": "Wooper",
-    "img": "../images/wooper.png"
+    "img": "wooper.png"
   },
   {
     "name": "Quagsire",
-    "img": "../images/quagsire.png"
+    "img": "quagsire.png"
   },
   {
     "name": "Wingull",
-    "img": "../images/wingull.png"
+    "img": "wingull.png"
   },
   {
     "name": "Pelipper",
-    "img": "../images/pelipper.png"
+    "img": "pelipper.png"
   },
   {
     "name": "Girafarig",
-    "img": "../images/girafarig.png"
+    "img": "girafarig.png"
   },
   {
     "name": "Hippopotas",
-    "img": "../images/hippopotas.png"
+    "img": "hippopotas.png"
   },
   {
     "name": "Hippowdon",
-    "img": "../images/hippowdon.png"
+    "img": "hippowdon.png"
   },
   {
     "name": "Azurill",
-    "img": "../images/azurill.png"
+    "img": "azurill.png"
   },
   {
     "name": "Marill",
-    "img": "../images/marill.png"
+    "img": "marill.png"
   },
   {
     "name": "Azumarill",
-    "img": "../images/azumarill.png"
+    "img": "azumarill.png"
   },
   {
     "name": "Skorupi",
-    "img": "../images/skorupi.png"
+    "img": "skorupi.png"
   },
   {
     "name": "Drapion",
-    "img": "../images/drapion.png"
+    "img": "drapion.png"
   },
   {
     "name": "Croagunk",
-    "img": "../images/croagunk.png"
+    "img": "croagunk.png"
   },
   {
     "name": "Toxicroak",
-    "img": "../images/toxicroak.png"
+    "img": "toxicroak.png"
   },
   {
     "name": "Carnivine",
-    "img": "../images/carnivine.png"
+    "img": "carnivine.png"
   },
   {
     "name": "Remoraid",
-    "img": "../images/remoraid.png"
+    "img": "remoraid.png"
   },
   {
     "name": "Octillery",
-    "img": "../images/octillery.png"
+    "img": "octillery.png"
   },
   {
     "name": "Finneon",
-    "img": "../images/finneon.png"
+    "img": "finneon.png"
   },
   {
     "name": "Lumineon",
-    "img": "../images/lumineon.png"
+    "img": "lumineon.png"
   },
   {
     "name": "Tentacool",
-    "img": "../images/tentacool.png"
+    "img": "tentacool.png"
   },
   {
     "name": "Tentacruel",
-    "img": "../images/tentacruel.png"
+    "img": "tentacruel.png"
   },
   {
     "name": "Feebas",
-    "img": "../images/feebas.png"
+    "img": "feebas.png"
   },
   {
     "name": "Milotic",
-    "img": "../images/milotic.png"
+    "img": "milotic.png"
   },
   {
     "name": "Mantyke",
-    "img": "../images/mantyke.png"
+    "img": "mantyke.png"
   },
   {
     "name": "Mantine",
-    "img": "../images/mantine.png"
+    "img": "mantine.png"
   },
   {
     "name": "Snover",
-    "img": "../images/snover.png"
+    "img": "snover.png"
   },
   {
     "name": "Abomasnow",
-    "img": "../images/abomasnow.png"
+    "img": "abomasnow.png"
   },
   {
     "name": "Sneasel",
-    "img": "../images/sneasel.png"
+    "img": "sneasel.png"
   },
   {
     "name": "Weavile",
-    "img": "../images/weavile.png"
+    "img": "weavile.png"
   },
   {
     "name": "Uxie",
-    "img": "../images/uxie.png"
+    "img": "uxie.png"
   },
   {
     "name": "Mesprit",
-    "img": "../images/mesprit.png"
+    "img": "mesprit.png"
   },
   {
     "name": "Azelf",
-    "img": "../images/azelf.png"
+    "img": "azelf.png"
   },
   {
     "name": "Dialga",
-    "img": "../images/dialga.png"
+    "img": "dialga.png"
   },
   {
     "name": "Palkia",
-    "img": "../images/palkia.png"
+    "img": "palkia.png"
   },
   {
     "name": "Manaphy",
-    "img": "../images/manaphy.png"
+    "img": "manaphy.png"
   }
 ]
 

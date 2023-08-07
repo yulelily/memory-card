@@ -3,7 +3,7 @@
 export default function Pokemon({pokemon}) {
   return (
     <>
-      <img src={pokemon.img} alt={pokemon.name}></img>
+      <img src={`/images/${pokemon.img}`} alt={pokemon.name}></img>
       <p>{pokemon.name}</p>
     </>
   );

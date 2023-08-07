@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import * as pokeFns from './pokeFns.js'
-import Pokemon from './Pokemon.jsx'
-import HelpScreen from './HelpScreen.jsx'
-import ResultScreen from './ResultScreen.jsx'
-import './App.css'
+import Pokemon from './components/Pokemon.jsx'
+import HelpScreen from './components/HelpScreen.jsx'
+import ResultScreen from './components/ResultScreen.jsx'
+import './styles/App.css'
 
 export default function App() {
 
