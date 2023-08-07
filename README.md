@@ -1,6 +1,6 @@
 # Pokemon Memory
 
-A memory card game based on Pokemon Diamond and Pearl written in React.
+A memory card game based on Pokemon Diamond and Pearl written in React!
 
 Favicon [Moon](https://icons8.com/icon/101343/moon-and-stars) icon by [Icons8](https://icons8.com).
 
@@ -11,3 +11,5 @@ Favicon [Moon](https://icons8.com/icon/101343/moon-and-stars) icon by [Icons8](h
   - Maddening: 36 cards
 - Select cards that have not been previously selected in a game to increase score.
 - Select ? button for help.
+- Select &#128420; to toggle between light/dark mode.
+  - App will automatically detect theme of operating system!
