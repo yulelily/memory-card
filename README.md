@@ -1,8 +1,13 @@
-# React + Vite
+# Pokemon Memory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A memory card game based on Pokemon Diamond and Pearl written in React.
 
-Currently, two official plugins are available:
+Favicon [Moon](https://icons8.com/icon/101343/moon-and-stars) icon by [Icons8](https://icons8.com).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Instructions to play:
+- Select a difficulty to start a new game. (Tiers inspired by Fire Emblem)
+  - Normal: 12 cards
+  - Hard: 24 cards
+  - Maddening: 36 cards
+- Select cards that have not been previously selected in a game to increase score.
+- Select ? button for help.
