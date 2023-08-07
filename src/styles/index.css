@@ -14,6 +14,20 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.linkGithub {
+  margin: 8px;
+  width: 1in;
+  background-color: inherit;
+  color: rgb(97, 97, 97);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: right;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
